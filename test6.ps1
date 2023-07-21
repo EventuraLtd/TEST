@@ -1,6 +1,9 @@
 param ([Parameter (Mandatory = $false)]
-	[object]$data
+	[object]$WebHookData
 )
+
+
+$data = ConvertFrom-Json -InputObject $WebHookData.RequestBody
 
 
 Write-Output $data
