@@ -1,7 +1,7 @@
-Write-Host $data
+Write-Log $data
 
-Write-Host $FirstName
+Write-Log $FirstName
 
-Write-Host "FirstName - $FirstName"
-Write-Host "LastName - $LastName"
-Write-Host "TicketID - $TicketID"
+Write-Log "FirstName - $FirstName"
+Write-Log "LastName - $LastName"
+Write-Log "TicketID - $TicketID"
