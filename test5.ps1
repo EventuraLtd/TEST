@@ -1,5 +1,16 @@
+param ([Parameter (Mandatory = $false)]
+	[object]$data
+)
+
+
 Write-Output $data
 Write-Output "NAME>..."
+
+
+$FirstName = $data[0].Content.firstname
+$LastName = $data[0].Content.lastname
+$TicketID = $data[0].Content.TicketID
+
 Write-Output $FirstName
 
 New-ADUser -Name $FirstName
